@@ -9,12 +9,16 @@ permissions:
   contents: write
 
 jobs:
-  - name: Generate snake
-  uses: Platane/snk@v3
-  with:
-    github_user_name: LexonPro
-    outputs: |
-  dist/github-contribution-grid-snake.svg?palette=github-dark&background=transparent&color_snake=#39d353
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: LexonPro
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark
 
       - name: Push snake
         uses: crazy-max/ghaction-github-pages@v3
