@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate clean snake
+      - name: Generate transparent snake
         uses: Platane/snk@v3
         with:
           github_user_name: LexonPro
           outputs: |
-            dist/snake.svg?palette=github-dark&color_snake=#39ff14
+            dist/github-contribution-grid-snake.svg?palette=github-dark&background=transparent
 
       - name: Push snake
         uses: crazy-max/ghaction-github-pages@v3
