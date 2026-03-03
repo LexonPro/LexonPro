@@ -65,4 +65,4 @@ Turning ideas into code, experimenting with new tools, and improving every day i
 💬 Thanks for visiting my profile!  
 I am always excited to "connect, collaborate, and learn new things".  
 Feel free to check out my repositories, drop a message, or just say hi! 😄
-![Snake animation](https://github.com/LexonPro/LexonPro/blob/output/github-contribution-grid-snake.svg)
+![Snake](https://github.com/LexonPro/LexonPro/blob/output/snake-dark.svg)
