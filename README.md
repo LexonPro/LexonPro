@@ -59,10 +59,8 @@
 ## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy-sigma-five.vercel.app/?username=LexonPro&theme=onedark&no-frame=true&row=1&column=6&margin-w=15" />
+  <img src="https://github-profile-trophy.vercel.app/?username=LexonPro&theme=flat&no-frame=true&margin-w=15" />
 </p>
-
----
 
 ## 💻 LeetCode Statistics
 
