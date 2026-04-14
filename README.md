@@ -54,13 +54,8 @@
   <img src="https://streak-stats.demolab.com?user=LexonPro&theme=github-dark&hide_border=true" height="170"/>
 </p>
 
----
 
-## 🏆 GitHub Trophies
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=LexonPro&theme=flat&no-frame=true&margin-w=15" />
-</p>
 
 ## 💻 LeetCode Statistics
 
