@@ -1,8 +1,6 @@
 name: Generate Animated Graph
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -10,18 +8,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-      - name: Generate SVG
+      - name: Create SVG file
         run: |
-          # Here you generate your custom SVG (script / node / python)
-          # Output file:
-          # dist/animated-graph.svg
+          mkdir -p dist
+          echo '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="100">
+          <rect width="100%" height="100%" fill="black"/>
+          <text x="20" y="60" fill="lime" font-size="30">
+          Animated Graph Working ✅
+          </text>
+          </svg>' > dist/animated-graph.svg
 
-      - name: Deploy
-        uses: crazy-max/ghaction-github-pages@v3
+      - name: Deploy to output branch
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
