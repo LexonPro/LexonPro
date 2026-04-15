@@ -8,20 +8,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Create SVG file
+      - name: Create SVG
         run: |
-          mkdir -p dist
+          mkdir dist
           echo '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="100">
           <rect width="100%" height="100%" fill="black"/>
           <text x="20" y="60" fill="lime" font-size="30">
-          Animated Graph Working ✅
+          Working ✅
           </text>
           </svg>' > dist/animated-graph.svg
 
-      - name: Deploy to output branch
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
